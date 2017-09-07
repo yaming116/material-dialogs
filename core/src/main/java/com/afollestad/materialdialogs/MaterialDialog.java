@@ -1237,12 +1237,12 @@ public class MaterialDialog extends DialogBase
       if (this.mediumFont == null) {
         try {
           if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            this.mediumFont = Typeface.create("sans-serif-medium", Typeface.NORMAL);
+            this.mediumFont = Typeface.create("sans-serif", Typeface.NORMAL);
           } else {
-            this.mediumFont = Typeface.create("sans-serif", Typeface.BOLD);
+            this.mediumFont = Typeface.create("sans-serif", Typeface.NORMAL);
           }
         } catch (Throwable ignored) {
-          this.mediumFont = Typeface.DEFAULT_BOLD;
+          this.mediumFont = Typeface.DEFAULT;
         }
       }
       if (this.regularFont == null) {
